@@ -1,0 +1,29 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MahiroViewer"
+        xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls" x:Class="MainWindow"
+        mc:Ignorable="d"
+        Title="Mahiro Viewer" Height="401.058" Width="669.941" Icon="Res/绪山真寻的本体（旋转角度）.ico" ResizeMode="NoResize">
+    <Grid Background="#FFF3F3F3">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="357*"/>
+            <ColumnDefinition Width="307*"/>
+        </Grid.ColumnDefinitions>
+        <Rectangle Fill="#FF2196F3" HorizontalAlignment="Left" Height="73" Stroke="#FFBABABA" VerticalAlignment="Top" Width="672" Grid.ColumnSpan="2" Margin="0,-3,-8.8,0"/>
+        <Label x:Name="label" Content="欢迎使用Mahiro Viewer！" Height="47" Margin="10,3,34.8,0" VerticalAlignment="Top" FontSize="26.667" Background="#00000000" Foreground="#DDFFFFFF"/>
+        <Label x:Name="label_Copy" Content="新一代Arknight设定编辑器" Height="47" Margin="10,38,34.8,0" VerticalAlignment="Top" FontSize="14.667" Background="#00000000" Foreground="#DDFFFFFF"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="32" Margin="264,138,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="191" mah:TextBoxHelper.Watermark="项目名称" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="textBox_Copy" HorizontalAlignment="Right" Height="32" Margin="0,184,204.2,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="191" mah:TextBoxHelper.Watermark="作者" Grid.ColumnSpan="2"/>
+        <Label x:Name="label2" Content="项目名" HorizontalAlignment="Left" Height="25" Margin="212,141,0,0" VerticalAlignment="Top" Width="47"/>
+        <Label x:Name="label2_Copy" Content="作者" HorizontalAlignment="Left" Height="25" Margin="216,189,0,0" VerticalAlignment="Top" Width="47"/>
+        <Button x:Name="button_Copy" Content="立即创建" HorizontalAlignment="Left" Height="45" Margin="216,240,0,0" VerticalAlignment="Top" Width="252" FontSize="14.667" Background="#FF2196F3" Foreground="White" BorderBrush="#FF2196F3" Grid.ColumnSpan="2"/>
+        <CheckBox x:Name="checkBox" Content="只读模式" HorizontalAlignment="Left" Height="23" Margin="302,338,0,0" VerticalAlignment="Top" Width="75" Grid.ColumnSpan="2"/>
+        <Label x:Name="label3" Content="只读模式无法保存和导出内容" HorizontalAlignment="Left" Height="21" Margin="271,218,0,0" VerticalAlignment="Top" Width="169" Foreground="#DDFF0000" Grid.ColumnSpan="2" Visibility="Hidden" />
+        <Button x:Name="button_Copy1" Content="从文件打开" HorizontalAlignment="Left" Height="45" Margin="216,291,0,0" VerticalAlignment="Top" Width="252" FontSize="14.667" Background="#FF2196F3" Foreground="White" BorderBrush="#FF2196F3" Grid.ColumnSpan="2"/>
+        <Label x:Name="label1" Content="测试版0.2.3" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="221.2,338,0,0" VerticalAlignment="Top" Width="75" TextOptions.TextHintingMode="Animated" TextOptions.TextFormattingMode="Display"/>
+        <Button x:Name="button" Content="查看本地项目文件" HorizontalAlignment="Left" Height="36" Margin="10,325,0,0" VerticalAlignment="Top" Width="145"/>
+    </Grid>
+</Window>

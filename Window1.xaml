@@ -1,0 +1,533 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MahiroViewer"
+        xmlns:FileIO="clr-namespace:Microsoft.VisualBasic.FileIO;assembly=Microsoft.VisualBasic" x:Class="Window1"
+        mc:Ignorable="d" Height="444.706" Width="744.047" Title="编辑器" ResizeMode="NoResize" Icon="Res/绪山真寻的本体（旋转角度）.ico">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="97*"/>
+        </Grid.ColumnDefinitions>
+        <TabControl x:Name="tabControl" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="415" VerticalAlignment="Top" Width="731">
+            <TabItem Header="主要设定">
+                <Grid Background="#FFE5E5E5" Margin="0,0,0,0.2">
+                    <Label x:Name="label3" Content="攻击范围" HorizontalAlignment="Left" Height="23" Margin="441,5,0,0" VerticalAlignment="Top" Width="58"/>
+                    <CheckBox x:Name="checkBox1" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="441,33,0,0" VerticalAlignment="Top" Width="19"/>
+                    <CheckBox x:Name="checkBox1_Copy" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="461,33,0,0" VerticalAlignment="Top" Width="19"/>
+                    <CheckBox x:Name="checkBox1_Copy1" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="480,33,0,0" VerticalAlignment="Top" Width="19"/>
+                    <CheckBox x:Name="checkBox1_Copy2" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="498,33,0,0" VerticalAlignment="Top" Width="19"/>
+                    <CheckBox x:Name="checkBox1_Copy3" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="515,33,0,0" VerticalAlignment="Top" Width="19"/>
+                    <CheckBox x:Name="checkBox1_Copy4" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="441,49,0,0" VerticalAlignment="Top" Width="19"/>
+                    <CheckBox x:Name="checkBox1_Copy5" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="461,49,0,0" VerticalAlignment="Top" Width="19"/>
+                    <CheckBox x:Name="checkBox1_Copy6" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="480,49,0,0" VerticalAlignment="Top" Width="19"/>
+                    <CheckBox x:Name="checkBox1_Copy7" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="498,49,0,0" VerticalAlignment="Top" Width="19"/>
+                    <CheckBox x:Name="checkBox1_Copy8" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="515,49,0,0" VerticalAlignment="Top" Width="19"/>
+                    <CheckBox x:Name="checkBox1_Copy9" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="441,66,0,0" VerticalAlignment="Top" Width="19"/>
+                    <CheckBox x:Name="checkBox1_Copy10" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="461,66,0,0" VerticalAlignment="Top" Width="19"/>
+                    <CheckBox x:Name="checkBox1_Copy11" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="480,66,0,0" VerticalAlignment="Top" Width="19" IsChecked="True" IsEnabled="False"/>
+                    <CheckBox x:Name="checkBox1_Copy12" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="498,66,0,0" VerticalAlignment="Top" Width="19"/>
+                    <CheckBox x:Name="checkBox1_Copy13" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="515,66,0,0" VerticalAlignment="Top" Width="19"/>
+                    <CheckBox x:Name="checkBox1_Copy14" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="441,85,0,0" VerticalAlignment="Top" Width="19"/>
+                    <CheckBox x:Name="checkBox1_Copy15" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="461,85,0,0" VerticalAlignment="Top" Width="19"/>
+                    <CheckBox x:Name="checkBox1_Copy16" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="480,85,0,0" VerticalAlignment="Top" Width="19"/>
+                    <CheckBox x:Name="checkBox1_Copy17" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="498,85,0,0" VerticalAlignment="Top" Width="19"/>
+                    <CheckBox x:Name="checkBox1_Copy18" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="515,85,0,0" VerticalAlignment="Top" Width="19"/>
+                    <CheckBox x:Name="checkBox1_Copy19" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="441,104,0,0" VerticalAlignment="Top" Width="19"/>
+                    <CheckBox x:Name="checkBox1_Copy20" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="461,104,0,0" VerticalAlignment="Top" Width="19"/>
+                    <CheckBox x:Name="checkBox1_Copy21" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="480,104,0,0" VerticalAlignment="Top" Width="19"/>
+                    <CheckBox x:Name="checkBox1_Copy22" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="498,104,0,0" VerticalAlignment="Top" Width="19"/>
+                    <CheckBox x:Name="checkBox1_Copy23" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="515,104,0,0" VerticalAlignment="Top" Width="19"/>
+                    <Label x:Name="label4" Content="角色名" HorizontalAlignment="Left" Height="22" Margin="230,19,0,0" VerticalAlignment="Top" Width="47"/>
+                    <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="22" Margin="286,19,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="143"/>
+                    <Label x:Name="label3_Copy" Content="基础伤害" HorizontalAlignment="Left" Height="23" Margin="446,130,0,0" VerticalAlignment="Top" Width="58"/>
+                    <Grid HorizontalAlignment="Left" Height="25" Margin="453,158,0,0" VerticalAlignment="Top" Width="125">
+                        <RadioButton x:Name="PhysDmg" Content="物理" HorizontalAlignment="Left" Height="21" Margin="7,0,0,0" VerticalAlignment="Top" Width="53" IsChecked="True"/>
+                        <RadioButton x:Name="MagiDmg" Content="法术" HorizontalAlignment="Left" Height="21" Margin="71,0,0,0" VerticalAlignment="Top" Width="53" RenderTransformOrigin="0.497,2.368"/>
+                    </Grid>
+                    <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="24" Margin="497,187,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="93"/>
+                    <Label x:Name="label5" Content="伤害" HorizontalAlignment="Left" Height="28" Margin="459,187,0,0" VerticalAlignment="Top" Width="33"/>
+                    <Label x:Name="label4_Copy" Content="所属组织" HorizontalAlignment="Left" Height="22" Margin="230,49,0,0" VerticalAlignment="Top" Width="56"/>
+                    <TextBox x:Name="textBox_Copy" HorizontalAlignment="Left" Height="22" Margin="286,49,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="143"/>
+                    <Label x:Name="label6" Content="职业" HorizontalAlignment="Left" Height="28" Margin="313,82,0,0" VerticalAlignment="Top" Width="34"/>
+                    <Grid HorizontalAlignment="Left" Height="113" Margin="243,107,0,0" VerticalAlignment="Top" Width="186">
+                        <RadioButton x:Name="radioButton2" Content="近卫" HorizontalAlignment="Left" Height="25" VerticalAlignment="Top" Width="56"/>
+                        <RadioButton x:Name="radioButton2_Copy" Content="先锋" HorizontalAlignment="Left" Height="25" VerticalAlignment="Top" Width="56" Margin="59,0,0,0"/>
+                        <RadioButton x:Name="radioButton2_Copy1" Content="术士" HorizontalAlignment="Left" Height="25" VerticalAlignment="Top" Width="56" Margin="125,0,0,0"/>
+                        <RadioButton x:Name="radioButton2_Copy2" Content="辅助" HorizontalAlignment="Left" Height="25" VerticalAlignment="Top" Width="56" Margin="0,25,0,0"/>
+                        <RadioButton x:Name="radioButton2_Copy3" Content="狙击" HorizontalAlignment="Left" Height="25" VerticalAlignment="Top" Width="56" Margin="59,25,0,0"/>
+                        <RadioButton x:Name="radioButton2_Copy4" Content="重装" HorizontalAlignment="Left" Height="25" VerticalAlignment="Top" Width="56" Margin="125,25,0,0"/>
+                        <RadioButton x:Name="radioButton3" HorizontalAlignment="Left" Height="30" Margin="0,75,0,0" VerticalAlignment="Top" Width="59" Content="自定义"/>
+                        <TextBox x:Name="OtherWork" HorizontalAlignment="Left" Height="26" Margin="64,79,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="112" IsEnabled="False"/>
+                        <RadioButton x:Name="radioButton2_Copy5" Content="特种" HorizontalAlignment="Left" Height="25" VerticalAlignment="Top" Width="56" Margin="0,50,0,0"/>
+                    </Grid>
+                    <CheckBox x:Name="checkBox2" Content="群体伤害" HorizontalAlignment="Left" Height="25" Margin="462,217,0,0" VerticalAlignment="Top" Width="128"/>
+                    <Label x:Name="label8" Content="群伤&#xA;规则" HorizontalAlignment="Left" Height="40" Margin="454,256,0,0" VerticalAlignment="Top" Width="35"/>
+                    <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="57" Margin="493,252,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="97"/>
+                    <Label x:Name="label3_Copy1" Content="阻挡数" HorizontalAlignment="Left" Height="23" Margin="540,5,0,0" VerticalAlignment="Top" Width="58"/>
+                    <TextBox x:Name="textBox3" HorizontalAlignment="Left" Height="27" Margin="545,27,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="59"/>
+                    <CheckBox x:Name="checkBox3" Content="高台" HorizontalAlignment="Left" Height="26" Margin="551,82,0,0" VerticalAlignment="Top" Width="53"/>
+                    <CheckBox x:Name="checkBox3_Copy" Content="地面" HorizontalAlignment="Left" Height="27" Margin="551,107,0,0" VerticalAlignment="Top" Width="53"/>
+                    <Label x:Name="label3_Copy2" Content="部署位置" HorizontalAlignment="Left" Height="23" Margin="540,59,0,0" VerticalAlignment="Top" Width="58"/>
+                    <Label x:Name="label3_Copy3" Content="部署费用" HorizontalAlignment="Left" Height="23" Margin="608,5,0,0" VerticalAlignment="Top" Width="58"/>
+                    <TextBox x:Name="textBox3_Copy" HorizontalAlignment="Left" Height="27" Margin="613,27,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="59"/>
+                    <Label x:Name="label3_Copy4" Content="复活时间(s)" HorizontalAlignment="Left" Height="23" Margin="608,59,0,0" VerticalAlignment="Top" Width="72"/>
+                    <TextBox x:Name="textBox3_Copy1" HorizontalAlignment="Left" Height="27" Margin="613,81,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="59"/>
+                    <Label x:Name="label3_Copy5" Content="生命值" HorizontalAlignment="Left" Height="23" Margin="608,117,0,0" VerticalAlignment="Top" Width="72"/>
+                    <TextBox x:Name="textBox3_Copy2" HorizontalAlignment="Left" Height="27" Margin="613,139,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="59"/>
+                    <Label x:Name="label3_Copy6" Content="法术抗性" HorizontalAlignment="Left" Height="23" Margin="608,174,0,0" VerticalAlignment="Top" Width="72"/>
+                    <TextBox x:Name="textBox3_Copy3" HorizontalAlignment="Left" Height="27" Margin="613,196,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="59"/>
+                    <Label x:Name="label3_Copy7" Content="物理抗性" HorizontalAlignment="Left" Height="23" Margin="608,225,0,0" VerticalAlignment="Top" Width="72"/>
+                    <TextBox x:Name="textBox3_Copy4" HorizontalAlignment="Left" Height="27" Margin="613,247,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="59"/>
+                    <Label x:Name="label10" Content="立绘" HorizontalAlignment="Left" Height="27" Margin="10,0,0,0" VerticalAlignment="Top" Width="118"/>
+                    <Rectangle HorizontalAlignment="Left" Height="161" Margin="10,22,0,0" VerticalAlignment="Top" Width="106" Stroke="#FF4F4F4F"/>
+                    <Rectangle HorizontalAlignment="Left" Height="161" Margin="123,22,0,0" Stroke="#FF4F4F4F" VerticalAlignment="Top" Width="106"/>
+                    <Rectangle HorizontalAlignment="Left" Height="161" Margin="10,189,0,0" Stroke="#FF4F4F4F" VerticalAlignment="Top" Width="106"/>
+                    <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="18" Margin="11,22,0,0" TextWrapping="Wrap" Text="默认" VerticalAlignment="Top" Width="106"/>
+                    <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Height="18" Margin="125,22,0,0" TextWrapping="Wrap" Text="精英1" VerticalAlignment="Top" Width="106"/>
+                    <TextBlock x:Name="textBlock_Copy1" HorizontalAlignment="Left" Height="18" Margin="11,190,0,0" TextWrapping="Wrap" Text="精英2" VerticalAlignment="Top" Width="106"/>
+                    <Image x:Name="imgdef" HorizontalAlignment="Left" Height="135" Margin="19,40,0,0" VerticalAlignment="Top" Width="86"/>
+                    <Button x:Name="button" Content="编辑默认立绘" HorizontalAlignment="Left" Height="31" Margin="128,217,0,0" VerticalAlignment="Top" Width="101" FontSize="10.667"/>
+                    <Button x:Name="button_Copy" Content="编辑精英1立绘" HorizontalAlignment="Left" Height="31" Margin="128,260,0,0" VerticalAlignment="Top" Width="101" FontSize="10"/>
+                    <Button x:Name="button_Copy1" Content="编辑精英2立绘" HorizontalAlignment="Left" Height="31" Margin="128,301,0,0" VerticalAlignment="Top" Width="101" FontSize="10"/>
+                    <Image x:Name="imgl1" HorizontalAlignment="Left" Height="135" Margin="133,40,0,0" VerticalAlignment="Top" Width="86"/>
+                    <Label x:Name="label14" Content="星级" HorizontalAlignment="Left" Height="24" Margin="242,232,0,0" VerticalAlignment="Top" Width="88"/>
+                    <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Height="24" Margin="277,232,0,0" VerticalAlignment="Top" Width="152">
+                        <ComboBoxItem Content="1" HorizontalAlignment="Left" Width="150.4" Selected="ComboBoxItem_Selected"/>
+                        <ComboBoxItem Content="2" HorizontalAlignment="Left" Width="150.4"/>
+                        <ComboBoxItem Content="3" HorizontalAlignment="Left" Width="150.4"/>
+                        <ComboBoxItem Content="4" HorizontalAlignment="Left" Width="150.4"/>
+                        <ComboBoxItem Content="5" HorizontalAlignment="Left" Width="150.4"/>
+                        <ComboBoxItem Content="6" HorizontalAlignment="Left" Width="150.4"/>
+                    </ComboBox>
+                </Grid>
+            </TabItem>
+            <TabItem Header="技能">
+                <Grid Background="#FFE5E5E5">
+                    <TabControl x:Name="tabControl1" HorizontalAlignment="Left" Height="347" Margin="10,10,0,0" VerticalAlignment="Top" Width="711">
+                        <TabItem Header="技能1">
+                            <Grid Background="#FFE5E5E5">
+                                <Rectangle Fill="#00F4F4F5" HorizontalAlignment="Left" Height="58" Margin="24,36,0,0" Stroke="Black" VerticalAlignment="Top" Width="58"/>
+                                <Image x:Name="image1" HorizontalAlignment="Left" Height="58" Margin="24,36,0,0" VerticalAlignment="Top" Width="58" OpacityMask="#FF828282"/>
+                                <Label x:Name="label7" Content="技能图标" HorizontalAlignment="Left" Height="23" Margin="24,8,0,0" VerticalAlignment="Top" Width="58"/>
+                                <Button x:Name="button5" Content="添加/修改" HorizontalAlignment="Left" Height="27" Margin="11,103,0,0" VerticalAlignment="Top" Width="87" FontSize="9.333"/>
+                                <Label x:Name="label9" Content="伤害类型" HorizontalAlignment="Left" Height="25" Margin="144,10,0,0" VerticalAlignment="Top" Width="114"/>
+                                <Grid HorizontalAlignment="Left" Height="32" Margin="148,32,0,0" VerticalAlignment="Top" Width="163">
+                                    <RadioButton x:Name="radioButton1" Content="物理" HorizontalAlignment="Left" Height="22" Margin="0,6,0,0" VerticalAlignment="Top" Width="73" IsChecked="True"/>
+                                    <RadioButton x:Name="radioButton4" Content="法术" HorizontalAlignment="Left" Height="22" Margin="78,6,0,0" VerticalAlignment="Top" Width="85"/>
+                                </Grid>
+                                <Label x:Name="label9_Copy" Content="伤害数值" HorizontalAlignment="Left" Height="25" Margin="144,62,0,0" VerticalAlignment="Top" Width="114"/>
+                                <TextBox x:Name="textBox4" HorizontalAlignment="Left" Height="28" Margin="150,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="167"/>
+                                <Label x:Name="label3_Copy8" Content="攻击范围" HorizontalAlignment="Left" Height="23" Margin="152,130,0,0" VerticalAlignment="Top" Width="58"/>
+                                <CheckBox x:Name="checkBox1_Copy24" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="152,158,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy25" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="172,158,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy26" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="191,158,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy27" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="209,158,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy28" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="227,158,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy29" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="152,174,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy30" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="172,174,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy31" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="191,174,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy32" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="209,174,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy33" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="227,174,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy34" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="152,191,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy35" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="172,191,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy36" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="191,191,0,0" VerticalAlignment="Top" Width="19" IsChecked="True" IsEnabled="False"/>
+                                <CheckBox x:Name="checkBox1_Copy37" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="209,191,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy38" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="227,191,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy39" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="152,210,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy40" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="172,210,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy41" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="191,210,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy42" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="209,210,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy43" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="227,210,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy44" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="152,229,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy45" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="172,229,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy46" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="191,229,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy47" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="209,229,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy48" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="227,229,0,0" VerticalAlignment="Top" Width="19"/>
+                                <Label x:Name="label9_Copy1" Content="附加特殊属性说明" HorizontalAlignment="Left" Height="25" Margin="259,131,0,0" VerticalAlignment="Top" Width="114"/>
+                                <TextBox x:Name="textBox4_Copy" HorizontalAlignment="Left" Height="91" Margin="263,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="167"/>
+                                <Label x:Name="label9_Copy2" Content="冷却时间" HorizontalAlignment="Left" Height="25" Margin="332,62,0,0" VerticalAlignment="Top" Width="114"/>
+                                <TextBox x:Name="textBox4_Copy1" HorizontalAlignment="Left" Height="28" Margin="338,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="92"/>
+                                <Label x:Name="label9_Copy3" Content="触发条件" HorizontalAlignment="Left" Height="25" Margin="291,10,0,0" VerticalAlignment="Top" Width="114"/>
+                                <Grid HorizontalAlignment="Left" Height="32" Margin="295,32,0,0" VerticalAlignment="Top" Width="135">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="32*"/>
+                                        <ColumnDefinition Width="131*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <RadioButton x:Name="radioButton5" Content="主动" HorizontalAlignment="Left" Height="22" Margin="0,6,0,0" VerticalAlignment="Top" Width="73" IsChecked="True" Grid.ColumnSpan="2"/>
+                                    <RadioButton x:Name="radioButton6" Content="被动" HorizontalAlignment="Left" Height="22" Margin="45.6,6,0,0" VerticalAlignment="Top" Width="58" Grid.Column="1"/>
+                                </Grid>
+                                <Label x:Name="label9_Copy4" Content="持续性" HorizontalAlignment="Left" Height="25" Margin="451,10,0,0" VerticalAlignment="Top" Width="114"/>
+                                <CheckBox x:Name="checkBox4" Content="持续性" HorizontalAlignment="Left" Height="32" Margin="451,32,0,0" VerticalAlignment="Top" Width="77"/>
+                                <Label x:Name="label12" Content="持续时长" HorizontalAlignment="Left" Height="24" Margin="518,37,0,0" VerticalAlignment="Top" Width="68"/>
+                                <TextBox x:Name="KeepTime" HorizontalAlignment="Left" Height="24" Margin="579,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="86" IsEnabled="False"/>
+                                <Label x:Name="label9_Copy5" Content="攻击对象" HorizontalAlignment="Left" Height="25" Margin="451,66,0,0" VerticalAlignment="Top" Width="114"/>
+                                <Label x:Name="label13" Content="最大攻击对象数" HorizontalAlignment="Left" Height="27" Margin="466,91,0,0" VerticalAlignment="Top" Width="99"/>
+                                <TextBox x:Name="textBox4_Copy2" HorizontalAlignment="Left" Height="28" Margin="565,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="92"/>
+                                <CheckBox x:Name="checkBox5" Content="只攻击特定对象" HorizontalAlignment="Left" Height="25" Margin="466,118,0,0" VerticalAlignment="Top" Width="109"/>
+                                <Label x:Name="label13_Copy" Content="攻击对象" HorizontalAlignment="Left" Height="27" Margin="466,168,0,0" VerticalAlignment="Top" Width="62"/>
+                                <TextBox x:Name="SpecAttk" HorizontalAlignment="Left" Height="59" Margin="524,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="141" IsEnabled="False"/>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="技能2">
+                            <Grid Background="#FFE5E5E5">
+                                <Rectangle Fill="#00F4F4F5" HorizontalAlignment="Left" Height="58" Margin="24,36,0,0" Stroke="Black" VerticalAlignment="Top" Width="58"/>
+                                <Image x:Name="image2" HorizontalAlignment="Left" Height="58" Margin="24,36,0,0" VerticalAlignment="Top" Width="58" OpacityMask="#FF828282"/>
+                                <Label x:Name="label15" Content="技能图标" HorizontalAlignment="Left" Height="23" Margin="24,8,0,0" VerticalAlignment="Top" Width="58"/>
+                                <Button x:Name="button6" Content="添加/修改" HorizontalAlignment="Left" Height="27" Margin="11,103,0,0" VerticalAlignment="Top" Width="87" FontSize="9.333"/>
+                                <Label x:Name="label16" Content="伤害类型" HorizontalAlignment="Left" Height="25" Margin="144,10,0,0" VerticalAlignment="Top" Width="114"/>
+                                <Grid HorizontalAlignment="Left" Height="32" Margin="148,32,0,0" VerticalAlignment="Top" Width="163">
+                                    <RadioButton x:Name="radioButton7" Content="物理" HorizontalAlignment="Left" Height="22" Margin="0,6,0,0" VerticalAlignment="Top" Width="73" IsChecked="True"/>
+                                    <RadioButton x:Name="radioButton8" Content="法术" HorizontalAlignment="Left" Height="22" Margin="78,6,0,0" VerticalAlignment="Top" Width="85"/>
+                                </Grid>
+                                <Label x:Name="label9_Copy6" Content="伤害数值" HorizontalAlignment="Left" Height="25" Margin="144,62,0,0" VerticalAlignment="Top" Width="114"/>
+                                <TextBox x:Name="textBox5" HorizontalAlignment="Left" Height="28" Margin="150,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="167"/>
+                                <Label x:Name="label3_Copy9" Content="攻击范围" HorizontalAlignment="Left" Height="23" Margin="152,130,0,0" VerticalAlignment="Top" Width="58"/>
+                                <CheckBox x:Name="checkBox1_Copy49" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="152,158,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy50" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="172,158,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy51" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="191,158,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy52" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="209,158,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy53" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="227,158,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy54" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="152,174,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy55" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="172,174,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy56" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="191,174,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy57" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="209,174,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy58" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="227,174,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy59" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="152,191,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy60" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="172,191,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy61" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="191,191,0,0" VerticalAlignment="Top" Width="19" IsChecked="True" IsEnabled="False"/>
+                                <CheckBox x:Name="checkBox1_Copy62" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="209,191,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy63" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="227,191,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy64" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="152,210,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy65" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="172,210,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy66" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="191,210,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy67" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="209,210,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy68" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="227,210,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy69" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="152,229,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy70" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="172,229,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy71" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="191,229,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy72" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="209,229,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy73" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="227,229,0,0" VerticalAlignment="Top" Width="19"/>
+                                <Label x:Name="label9_Copy7" Content="附加特殊属性说明" HorizontalAlignment="Left" Height="25" Margin="259,131,0,0" VerticalAlignment="Top" Width="114"/>
+                                <TextBox x:Name="textBox4_Copy3" HorizontalAlignment="Left" Height="91" Margin="263,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="167"/>
+                                <Label x:Name="label9_Copy8" Content="冷却时间" HorizontalAlignment="Left" Height="25" Margin="332,62,0,0" VerticalAlignment="Top" Width="114"/>
+                                <TextBox x:Name="textBox4_Copy4" HorizontalAlignment="Left" Height="28" Margin="338,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="92"/>
+                                <Label x:Name="label9_Copy9" Content="触发条件" HorizontalAlignment="Left" Height="25" Margin="291,10,0,0" VerticalAlignment="Top" Width="114"/>
+                                <Grid HorizontalAlignment="Left" Height="32" Margin="295,32,0,0" VerticalAlignment="Top" Width="135">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="32*"/>
+                                        <ColumnDefinition Width="131*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <RadioButton x:Name="radioButton9" Content="主动" HorizontalAlignment="Left" Height="22" Margin="0,6,0,0" VerticalAlignment="Top" Width="73" IsChecked="True" Grid.ColumnSpan="2"/>
+                                    <RadioButton x:Name="radioButton10" Content="被动" HorizontalAlignment="Left" Height="22" Margin="45.6,6,0,0" VerticalAlignment="Top" Width="58" Grid.Column="1"/>
+                                </Grid>
+                                <Label x:Name="label9_Copy10" Content="持续性" HorizontalAlignment="Left" Height="25" Margin="451,10,0,0" VerticalAlignment="Top" Width="114"/>
+                                <CheckBox x:Name="checkBox6" Content="持续性" HorizontalAlignment="Left" Height="32" Margin="451,32,0,0" VerticalAlignment="Top" Width="77"/>
+                                <Label x:Name="label17" Content="持续时长" HorizontalAlignment="Left" Height="24" Margin="518,37,0,0" VerticalAlignment="Top" Width="68"/>
+                                <TextBox x:Name="KeepTime1" HorizontalAlignment="Left" Height="24" Margin="579,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="86" IsEnabled="False"/>
+                                <Label x:Name="label9_Copy11" Content="攻击对象" HorizontalAlignment="Left" Height="25" Margin="451,66,0,0" VerticalAlignment="Top" Width="114"/>
+                                <Label x:Name="label18" Content="最大攻击对象数" HorizontalAlignment="Left" Height="27" Margin="466,91,0,0" VerticalAlignment="Top" Width="99"/>
+                                <TextBox x:Name="textBox4_Copy5" HorizontalAlignment="Left" Height="28" Margin="565,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="92"/>
+                                <CheckBox x:Name="checkBox7" Content="只攻击特定对象" HorizontalAlignment="Left" Height="25" Margin="466,118,0,0" VerticalAlignment="Top" Width="109"/>
+                                <Label x:Name="label13_Copy1" Content="攻击对象" HorizontalAlignment="Left" Height="27" Margin="466,168,0,0" VerticalAlignment="Top" Width="62"/>
+                                <TextBox x:Name="SpecAttk1" HorizontalAlignment="Left" Height="59" Margin="524,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="141" IsEnabled="False"/>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="技能3">
+                            <Grid Background="#FFE5E5E5">
+                                <Rectangle Fill="#00F4F4F5" HorizontalAlignment="Left" Height="58" Margin="24,36,0,0" Stroke="Black" VerticalAlignment="Top" Width="58"/>
+                                <Image x:Name="image3" HorizontalAlignment="Left" Height="58" Margin="24,36,0,0" VerticalAlignment="Top" Width="58" OpacityMask="#FF828282"/>
+                                <Label x:Name="label19" Content="技能图标" HorizontalAlignment="Left" Height="23" Margin="24,8,0,0" VerticalAlignment="Top" Width="58"/>
+                                <Button x:Name="button7" Content="添加/修改" HorizontalAlignment="Left" Height="27" Margin="11,103,0,0" VerticalAlignment="Top" Width="87" FontSize="9.333"/>
+                                <Label x:Name="label20" Content="伤害类型" HorizontalAlignment="Left" Height="25" Margin="144,10,0,0" VerticalAlignment="Top" Width="114"/>
+                                <Grid HorizontalAlignment="Left" Height="32" Margin="148,32,0,0" VerticalAlignment="Top" Width="163">
+                                    <RadioButton x:Name="radioButton11" Content="物理" HorizontalAlignment="Left" Height="22" Margin="0,6,0,0" VerticalAlignment="Top" Width="73" IsChecked="True"/>
+                                    <RadioButton x:Name="radioButton12" Content="法术" HorizontalAlignment="Left" Height="22" Margin="78,6,0,0" VerticalAlignment="Top" Width="85"/>
+                                </Grid>
+                                <Label x:Name="label9_Copy12" Content="伤害数值" HorizontalAlignment="Left" Height="25" Margin="144,62,0,0" VerticalAlignment="Top" Width="114"/>
+                                <TextBox x:Name="textBox6" HorizontalAlignment="Left" Height="28" Margin="150,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="167"/>
+                                <Label x:Name="label3_Copy10" Content="攻击范围" HorizontalAlignment="Left" Height="23" Margin="152,130,0,0" VerticalAlignment="Top" Width="58"/>
+                                <CheckBox x:Name="checkBox1_Copy74" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="152,158,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy75" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="172,158,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy76" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="191,158,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy77" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="209,158,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy78" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="227,158,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy79" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="152,174,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy80" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="172,174,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy81" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="191,174,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy82" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="209,174,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy83" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="227,174,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy84" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="152,191,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy85" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="172,191,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy86" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="191,191,0,0" VerticalAlignment="Top" Width="19" IsChecked="True" IsEnabled="False"/>
+                                <CheckBox x:Name="checkBox1_Copy87" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="209,191,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy88" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="227,191,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy89" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="152,210,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy90" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="172,210,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy91" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="191,210,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy92" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="209,210,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy93" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="227,210,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy94" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="152,229,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy95" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="172,229,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy96" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="191,229,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy97" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="209,229,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy98" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="227,229,0,0" VerticalAlignment="Top" Width="19"/>
+                                <Label x:Name="label9_Copy13" Content="附加特殊属性说明" HorizontalAlignment="Left" Height="25" Margin="259,131,0,0" VerticalAlignment="Top" Width="114"/>
+                                <TextBox x:Name="textBox4_Copy6" HorizontalAlignment="Left" Height="91" Margin="263,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="167"/>
+                                <Label x:Name="label9_Copy14" Content="冷却时间" HorizontalAlignment="Left" Height="25" Margin="332,62,0,0" VerticalAlignment="Top" Width="114"/>
+                                <TextBox x:Name="textBox4_Copy7" HorizontalAlignment="Left" Height="28" Margin="338,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="92"/>
+                                <Label x:Name="label9_Copy15" Content="触发条件" HorizontalAlignment="Left" Height="25" Margin="291,10,0,0" VerticalAlignment="Top" Width="114"/>
+                                <Grid HorizontalAlignment="Left" Height="32" Margin="295,32,0,0" VerticalAlignment="Top" Width="135">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="32*"/>
+                                        <ColumnDefinition Width="131*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <RadioButton x:Name="radioButton13" Content="主动" HorizontalAlignment="Left" Height="22" Margin="0,6,0,0" VerticalAlignment="Top" Width="73" IsChecked="True" Grid.ColumnSpan="2"/>
+                                    <RadioButton x:Name="radioButton14" Content="被动" HorizontalAlignment="Left" Height="22" Margin="45.6,6,0,0" VerticalAlignment="Top" Width="58" Grid.Column="1"/>
+                                </Grid>
+                                <Label x:Name="label9_Copy16" Content="持续性" HorizontalAlignment="Left" Height="25" Margin="451,10,0,0" VerticalAlignment="Top" Width="114"/>
+                                <CheckBox x:Name="checkBox8" Content="持续性" HorizontalAlignment="Left" Height="32" Margin="451,32,0,0" VerticalAlignment="Top" Width="77"/>
+                                <Label x:Name="label21" Content="持续时长" HorizontalAlignment="Left" Height="24" Margin="518,37,0,0" VerticalAlignment="Top" Width="68"/>
+                                <TextBox x:Name="KeepTime2" HorizontalAlignment="Left" Height="24" Margin="579,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="86" IsEnabled="False"/>
+                                <Label x:Name="label9_Copy17" Content="攻击对象" HorizontalAlignment="Left" Height="25" Margin="451,66,0,0" VerticalAlignment="Top" Width="114"/>
+                                <Label x:Name="label22" Content="最大攻击对象数" HorizontalAlignment="Left" Height="27" Margin="466,91,0,0" VerticalAlignment="Top" Width="99"/>
+                                <TextBox x:Name="textBox4_Copy8" HorizontalAlignment="Left" Height="28" Margin="565,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="92"/>
+                                <CheckBox x:Name="checkBox9" Content="只攻击特定对象" HorizontalAlignment="Left" Height="25" Margin="466,118,0,0" VerticalAlignment="Top" Width="109"/>
+                                <Label x:Name="label13_Copy2" Content="攻击对象" HorizontalAlignment="Left" Height="27" Margin="466,168,0,0" VerticalAlignment="Top" Width="62"/>
+                                <TextBox x:Name="SpecAttk2" HorizontalAlignment="Left" Height="59" Margin="524,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="141" IsEnabled="False"/>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="技能4">
+                            <Grid Background="#FFE5E5E5">
+                                <Rectangle Fill="#00F4F4F5" HorizontalAlignment="Left" Height="58" Margin="24,36,0,0" Stroke="Black" VerticalAlignment="Top" Width="58"/>
+                                <Image x:Name="image4" HorizontalAlignment="Left" Height="58" Margin="24,36,0,0" VerticalAlignment="Top" Width="58" OpacityMask="#FF828282"/>
+                                <Label x:Name="label23" Content="技能图标" HorizontalAlignment="Left" Height="23" Margin="24,8,0,0" VerticalAlignment="Top" Width="58"/>
+                                <Button x:Name="button8" Content="添加/修改" HorizontalAlignment="Left" Height="27" Margin="11,103,0,0" VerticalAlignment="Top" Width="87" FontSize="9.333"/>
+                                <Label x:Name="label24" Content="伤害类型" HorizontalAlignment="Left" Height="25" Margin="144,10,0,0" VerticalAlignment="Top" Width="114"/>
+                                <Grid HorizontalAlignment="Left" Height="32" Margin="148,32,0,0" VerticalAlignment="Top" Width="163">
+                                    <RadioButton x:Name="radioButton15" Content="物理" HorizontalAlignment="Left" Height="22" Margin="0,6,0,0" VerticalAlignment="Top" Width="73" IsChecked="True"/>
+                                    <RadioButton x:Name="radioButton16" Content="法术" HorizontalAlignment="Left" Height="22" Margin="78,6,0,0" VerticalAlignment="Top" Width="85"/>
+                                </Grid>
+                                <Label x:Name="label9_Copy18" Content="伤害数值" HorizontalAlignment="Left" Height="25" Margin="144,62,0,0" VerticalAlignment="Top" Width="114"/>
+                                <TextBox x:Name="textBox7" HorizontalAlignment="Left" Height="28" Margin="150,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="167"/>
+                                <Label x:Name="label3_Copy11" Content="攻击范围" HorizontalAlignment="Left" Height="23" Margin="152,130,0,0" VerticalAlignment="Top" Width="58"/>
+                                <CheckBox x:Name="checkBox1_Copy99" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="152,158,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy100" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="172,158,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy101" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="191,158,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy102" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="209,158,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy103" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="227,158,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy104" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="152,174,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy105" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="172,174,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy106" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="191,174,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy107" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="209,174,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy108" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="227,174,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy109" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="152,191,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy110" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="172,191,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy111" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="191,191,0,0" VerticalAlignment="Top" Width="19" IsChecked="True" IsEnabled="False"/>
+                                <CheckBox x:Name="checkBox1_Copy112" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="209,191,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy113" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="227,191,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy114" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="152,210,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy115" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="172,210,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy116" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="191,210,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy117" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="209,210,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy118" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="227,210,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy119" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="152,229,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy120" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="172,229,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy121" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="191,229,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy122" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="209,229,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy123" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="227,229,0,0" VerticalAlignment="Top" Width="19"/>
+                                <Label x:Name="label9_Copy19" Content="附加特殊属性说明" HorizontalAlignment="Left" Height="25" Margin="259,131,0,0" VerticalAlignment="Top" Width="114"/>
+                                <TextBox x:Name="textBox4_Copy9" HorizontalAlignment="Left" Height="91" Margin="263,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="167"/>
+                                <Label x:Name="label9_Copy20" Content="冷却时间" HorizontalAlignment="Left" Height="25" Margin="332,62,0,0" VerticalAlignment="Top" Width="114"/>
+                                <TextBox x:Name="textBox4_Copy10" HorizontalAlignment="Left" Height="28" Margin="338,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="92"/>
+                                <Label x:Name="label9_Copy21" Content="触发条件" HorizontalAlignment="Left" Height="25" Margin="291,10,0,0" VerticalAlignment="Top" Width="114"/>
+                                <Grid HorizontalAlignment="Left" Height="32" Margin="295,32,0,0" VerticalAlignment="Top" Width="135">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="32*"/>
+                                        <ColumnDefinition Width="131*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <RadioButton x:Name="radioButton17" Content="主动" HorizontalAlignment="Left" Height="22" Margin="0,6,0,0" VerticalAlignment="Top" Width="73" IsChecked="True" Grid.ColumnSpan="2"/>
+                                    <RadioButton x:Name="radioButton18" Content="被动" HorizontalAlignment="Left" Height="22" Margin="45.6,6,0,0" VerticalAlignment="Top" Width="58" Grid.Column="1"/>
+                                </Grid>
+                                <Label x:Name="label9_Copy22" Content="持续性" HorizontalAlignment="Left" Height="25" Margin="451,10,0,0" VerticalAlignment="Top" Width="114"/>
+                                <CheckBox x:Name="checkBox10" Content="持续性" HorizontalAlignment="Left" Height="32" Margin="451,32,0,0" VerticalAlignment="Top" Width="77"/>
+                                <Label x:Name="label25" Content="持续时长" HorizontalAlignment="Left" Height="24" Margin="518,37,0,0" VerticalAlignment="Top" Width="68"/>
+                                <TextBox x:Name="KeepTime3" HorizontalAlignment="Left" Height="24" Margin="579,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="86" IsEnabled="False"/>
+                                <Label x:Name="label9_Copy23" Content="攻击对象" HorizontalAlignment="Left" Height="25" Margin="451,66,0,0" VerticalAlignment="Top" Width="114"/>
+                                <Label x:Name="label26" Content="最大攻击对象数" HorizontalAlignment="Left" Height="27" Margin="466,91,0,0" VerticalAlignment="Top" Width="99"/>
+                                <TextBox x:Name="textBox4_Copy11" HorizontalAlignment="Left" Height="28" Margin="565,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="92"/>
+                                <CheckBox x:Name="checkBox11" Content="只攻击特定对象" HorizontalAlignment="Left" Height="25" Margin="466,118,0,0" VerticalAlignment="Top" Width="109"/>
+                                <Label x:Name="label13_Copy3" Content="攻击对象" HorizontalAlignment="Left" Height="27" Margin="466,168,0,0" VerticalAlignment="Top" Width="62"/>
+                                <TextBox x:Name="SpecAttk3" HorizontalAlignment="Left" Height="59" Margin="524,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="141" IsEnabled="False"/>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="技能5">
+                            <Grid Background="#FFE5E5E5">
+                                <Rectangle Fill="#00F4F4F5" HorizontalAlignment="Left" Height="58" Margin="24,36,0,0" Stroke="Black" VerticalAlignment="Top" Width="58"/>
+                                <Image x:Name="image5" HorizontalAlignment="Left" Height="58" Margin="24,36,0,0" VerticalAlignment="Top" Width="58" OpacityMask="#FF828282"/>
+                                <Label x:Name="label27" Content="技能图标" HorizontalAlignment="Left" Height="23" Margin="24,8,0,0" VerticalAlignment="Top" Width="58"/>
+                                <Button x:Name="button9" Content="添加/修改" HorizontalAlignment="Left" Height="27" Margin="11,103,0,0" VerticalAlignment="Top" Width="87" FontSize="9.333"/>
+                                <Label x:Name="label28" Content="伤害类型" HorizontalAlignment="Left" Height="25" Margin="144,10,0,0" VerticalAlignment="Top" Width="114"/>
+                                <Grid HorizontalAlignment="Left" Height="32" Margin="148,32,0,0" VerticalAlignment="Top" Width="163">
+                                    <RadioButton x:Name="radioButton19" Content="物理" HorizontalAlignment="Left" Height="22" Margin="0,6,0,0" VerticalAlignment="Top" Width="73" IsChecked="True"/>
+                                    <RadioButton x:Name="radioButton20" Content="法术" HorizontalAlignment="Left" Height="22" Margin="78,6,0,0" VerticalAlignment="Top" Width="85"/>
+                                </Grid>
+                                <Label x:Name="label9_Copy24" Content="伤害数值" HorizontalAlignment="Left" Height="25" Margin="144,62,0,0" VerticalAlignment="Top" Width="114"/>
+                                <TextBox x:Name="textBox8" HorizontalAlignment="Left" Height="28" Margin="150,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="167"/>
+                                <Label x:Name="label3_Copy12" Content="攻击范围" HorizontalAlignment="Left" Height="23" Margin="152,130,0,0" VerticalAlignment="Top" Width="58"/>
+                                <CheckBox x:Name="checkBox1_Copy124" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="152,158,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy125" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="172,158,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy126" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="191,158,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy127" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="209,158,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy128" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="227,158,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy129" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="152,174,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy130" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="172,174,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy131" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="191,174,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy132" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="209,174,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy133" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="227,174,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy134" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="152,191,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy135" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="172,191,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy136" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="191,191,0,0" VerticalAlignment="Top" Width="19" IsChecked="True" IsEnabled="False"/>
+                                <CheckBox x:Name="checkBox1_Copy137" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="209,191,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy138" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="227,191,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy139" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="152,210,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy140" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="172,210,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy141" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="191,210,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy142" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="209,210,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy143" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="227,210,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy144" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="152,229,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy145" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="172,229,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy146" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="191,229,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy147" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="209,229,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy148" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="227,229,0,0" VerticalAlignment="Top" Width="19"/>
+                                <Label x:Name="label9_Copy25" Content="附加特殊属性说明" HorizontalAlignment="Left" Height="25" Margin="259,131,0,0" VerticalAlignment="Top" Width="114"/>
+                                <TextBox x:Name="textBox4_Copy12" HorizontalAlignment="Left" Height="91" Margin="263,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="167"/>
+                                <Label x:Name="label9_Copy26" Content="冷却时间" HorizontalAlignment="Left" Height="25" Margin="332,62,0,0" VerticalAlignment="Top" Width="114"/>
+                                <TextBox x:Name="textBox4_Copy13" HorizontalAlignment="Left" Height="28" Margin="338,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="92"/>
+                                <Label x:Name="label9_Copy27" Content="触发条件" HorizontalAlignment="Left" Height="25" Margin="291,10,0,0" VerticalAlignment="Top" Width="114"/>
+                                <Grid HorizontalAlignment="Left" Height="32" Margin="295,32,0,0" VerticalAlignment="Top" Width="135">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="32*"/>
+                                        <ColumnDefinition Width="131*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <RadioButton x:Name="radioButton21" Content="主动" HorizontalAlignment="Left" Height="22" Margin="0,6,0,0" VerticalAlignment="Top" Width="73" IsChecked="True" Grid.ColumnSpan="2"/>
+                                    <RadioButton x:Name="radioButton22" Content="被动" HorizontalAlignment="Left" Height="22" Margin="45.6,6,0,0" VerticalAlignment="Top" Width="58" Grid.Column="1"/>
+                                </Grid>
+                                <Label x:Name="label9_Copy28" Content="持续性" HorizontalAlignment="Left" Height="25" Margin="451,10,0,0" VerticalAlignment="Top" Width="114"/>
+                                <CheckBox x:Name="checkBox12" Content="持续性" HorizontalAlignment="Left" Height="32" Margin="451,32,0,0" VerticalAlignment="Top" Width="77"/>
+                                <Label x:Name="label29" Content="持续时长" HorizontalAlignment="Left" Height="24" Margin="518,37,0,0" VerticalAlignment="Top" Width="68"/>
+                                <TextBox x:Name="KeepTime4" HorizontalAlignment="Left" Height="24" Margin="579,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="86" IsEnabled="False"/>
+                                <Label x:Name="label9_Copy29" Content="攻击对象" HorizontalAlignment="Left" Height="25" Margin="451,66,0,0" VerticalAlignment="Top" Width="114"/>
+                                <Label x:Name="label30" Content="最大攻击对象数" HorizontalAlignment="Left" Height="27" Margin="466,91,0,0" VerticalAlignment="Top" Width="99"/>
+                                <TextBox x:Name="textBox4_Copy14" HorizontalAlignment="Left" Height="28" Margin="565,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="92"/>
+                                <CheckBox x:Name="checkBox13" Content="只攻击特定对象" HorizontalAlignment="Left" Height="25" Margin="466,118,0,0" VerticalAlignment="Top" Width="109"/>
+                                <Label x:Name="label13_Copy4" Content="攻击对象" HorizontalAlignment="Left" Height="27" Margin="466,168,0,0" VerticalAlignment="Top" Width="62"/>
+                                <TextBox x:Name="SpecAttk4" HorizontalAlignment="Left" Height="59" Margin="524,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="141" IsEnabled="False"/>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="技能6">
+                            <Grid Background="#FFE5E5E5">
+                                <Rectangle Fill="#00F4F4F5" HorizontalAlignment="Left" Height="58" Margin="24,36,0,0" Stroke="Black" VerticalAlignment="Top" Width="58"/>
+                                <Image x:Name="image6" HorizontalAlignment="Left" Height="58" Margin="24,36,0,0" VerticalAlignment="Top" Width="58" OpacityMask="#FF828282"/>
+                                <Label x:Name="label31" Content="技能图标" HorizontalAlignment="Left" Height="23" Margin="24,8,0,0" VerticalAlignment="Top" Width="58"/>
+                                <Button x:Name="button10" Content="添加/修改" HorizontalAlignment="Left" Height="27" Margin="11,103,0,0" VerticalAlignment="Top" Width="87" FontSize="9.333"/>
+                                <Label x:Name="label32" Content="伤害类型" HorizontalAlignment="Left" Height="25" Margin="144,10,0,0" VerticalAlignment="Top" Width="114"/>
+                                <Grid HorizontalAlignment="Left" Height="32" Margin="148,32,0,0" VerticalAlignment="Top" Width="163">
+                                    <RadioButton x:Name="radioButton23" Content="物理" HorizontalAlignment="Left" Height="22" Margin="0,6,0,0" VerticalAlignment="Top" Width="73" IsChecked="True"/>
+                                    <RadioButton x:Name="radioButton24" Content="法术" HorizontalAlignment="Left" Height="22" Margin="78,6,0,0" VerticalAlignment="Top" Width="85"/>
+                                </Grid>
+                                <Label x:Name="label9_Copy30" Content="伤害数值" HorizontalAlignment="Left" Height="25" Margin="144,62,0,0" VerticalAlignment="Top" Width="114"/>
+                                <TextBox x:Name="textBox9" HorizontalAlignment="Left" Height="28" Margin="150,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="167"/>
+                                <Label x:Name="label3_Copy13" Content="攻击范围" HorizontalAlignment="Left" Height="23" Margin="152,130,0,0" VerticalAlignment="Top" Width="58"/>
+                                <CheckBox x:Name="checkBox1_Copy149" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="152,158,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy150" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="172,158,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy151" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="191,158,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy152" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="209,158,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy153" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="227,158,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy154" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="152,174,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy155" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="172,174,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy156" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="191,174,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy157" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="209,174,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy158" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="227,174,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy159" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="152,191,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy160" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="172,191,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy161" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="191,191,0,0" VerticalAlignment="Top" Width="19" IsChecked="True" IsEnabled="False"/>
+                                <CheckBox x:Name="checkBox1_Copy162" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="209,191,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy163" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="227,191,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy164" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="152,210,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy165" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="172,210,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy166" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="191,210,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy167" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="209,210,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy168" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="227,210,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy169" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="152,229,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy170" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="172,229,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy171" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="191,229,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy172" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="209,229,0,0" VerticalAlignment="Top" Width="19"/>
+                                <CheckBox x:Name="checkBox1_Copy173" Content="CheckBox" HorizontalAlignment="Left" Height="17" Margin="227,229,0,0" VerticalAlignment="Top" Width="19"/>
+                                <Label x:Name="label9_Copy31" Content="附加特殊属性说明" HorizontalAlignment="Left" Height="25" Margin="259,131,0,0" VerticalAlignment="Top" Width="114"/>
+                                <TextBox x:Name="textBox4_Copy15" HorizontalAlignment="Left" Height="91" Margin="263,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="167"/>
+                                <Label x:Name="label9_Copy32" Content="冷却时间" HorizontalAlignment="Left" Height="25" Margin="332,62,0,0" VerticalAlignment="Top" Width="114"/>
+                                <TextBox x:Name="textBox4_Copy16" HorizontalAlignment="Left" Height="28" Margin="338,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="92"/>
+                                <Label x:Name="label9_Copy33" Content="触发条件" HorizontalAlignment="Left" Height="25" Margin="291,10,0,0" VerticalAlignment="Top" Width="114"/>
+                                <Grid HorizontalAlignment="Left" Height="32" Margin="295,32,0,0" VerticalAlignment="Top" Width="135">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="32*"/>
+                                        <ColumnDefinition Width="131*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <RadioButton x:Name="radioButton25" Content="主动" HorizontalAlignment="Left" Height="22" Margin="0,6,0,0" VerticalAlignment="Top" Width="73" IsChecked="True" Grid.ColumnSpan="2"/>
+                                    <RadioButton x:Name="radioButton26" Content="被动" HorizontalAlignment="Left" Height="22" Margin="45.6,6,0,0" VerticalAlignment="Top" Width="58" Grid.Column="1"/>
+                                </Grid>
+                                <Label x:Name="label9_Copy34" Content="持续性" HorizontalAlignment="Left" Height="25" Margin="451,10,0,0" VerticalAlignment="Top" Width="114"/>
+                                <CheckBox x:Name="checkBox14" Content="持续性" HorizontalAlignment="Left" Height="32" Margin="451,32,0,0" VerticalAlignment="Top" Width="77"/>
+                                <Label x:Name="label33" Content="持续时长" HorizontalAlignment="Left" Height="24" Margin="518,37,0,0" VerticalAlignment="Top" Width="68"/>
+                                <TextBox x:Name="KeepTime5" HorizontalAlignment="Left" Height="24" Margin="579,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="86" IsEnabled="False"/>
+                                <Label x:Name="label9_Copy35" Content="攻击对象" HorizontalAlignment="Left" Height="25" Margin="451,66,0,0" VerticalAlignment="Top" Width="114"/>
+                                <Label x:Name="label34" Content="最大攻击对象数" HorizontalAlignment="Left" Height="27" Margin="466,91,0,0" VerticalAlignment="Top" Width="99"/>
+                                <TextBox x:Name="textBox4_Copy17" HorizontalAlignment="Left" Height="28" Margin="565,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="92"/>
+                                <CheckBox x:Name="checkBox15" Content="只攻击特定对象" HorizontalAlignment="Left" Height="25" Margin="466,118,0,0" VerticalAlignment="Top" Width="109"/>
+                                <Label x:Name="label13_Copy5" Content="攻击对象" HorizontalAlignment="Left" Height="27" Margin="466,168,0,0" VerticalAlignment="Top" Width="62"/>
+                                <TextBox x:Name="SpecAttk5" HorizontalAlignment="Left" Height="59" Margin="524,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="141" IsEnabled="False"/>
+                            </Grid>
+                        </TabItem>
+                    </TabControl>
+                </Grid>
+            </TabItem>
+            <TabItem Header="基建">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+            <TabItem Header="附加资料">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+            <TabItem Header="特殊剧情">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+            <TabItem Header="文件">
+                <Grid Background="#FFE5E5E5">
+                    <Button x:Name="button1" Content="导出文件" HorizontalAlignment="Left" Height="48" Margin="531,297,0,0" VerticalAlignment="Top" Width="172"/>
+                    <Button x:Name="button2" Content="保存工程" HorizontalAlignment="Left" Height="48" Margin="329,297,0,0" VerticalAlignment="Top" Width="176"/>
+                    <CheckBox x:Name="checkBox" Content="导出档案时将档案设定为只读以防止更改盗用" HorizontalAlignment="Left" Height="28" Margin="329,44,0,0" VerticalAlignment="Top" Width="302"/>
+                    <Label x:Name="label" Content="基本信息" HorizontalAlignment="Left" Height="38" Margin="8,6,0,0" VerticalAlignment="Top" Width="148" FontSize="24"/>
+                    <TextBox x:Name="namebox" HorizontalAlignment="Left" Height="25" Margin="60,49,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="181"/>
+                    <TextBox x:Name="ownbox" HorizontalAlignment="Left" Height="25" Margin="60,79,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="181"/>
+                    <Label x:Name="label1" Content="项目名" HorizontalAlignment="Left" Height="25" Margin="12,49,0,0" VerticalAlignment="Top" Width="48"/>
+                    <Label x:Name="label1_Copy" Content="作者" HorizontalAlignment="Left" Height="25" Margin="12,80,0,0" VerticalAlignment="Top" Width="48"/>
+                    <Label x:Name="label_Copy" Content="资源" HorizontalAlignment="Left" Height="38" Margin="8,118,0,0" VerticalAlignment="Top" Width="148" FontSize="24"/>
+                    <Button x:Name="button3" Content="在资源管理器中查看资源" HorizontalAlignment="Left" Height="40" Margin="8,175,0,0" VerticalAlignment="Top" Width="233"/>
+                    <Label x:Name="label_Copy1" Content="安全" HorizontalAlignment="Left" Height="38" Margin="329,6,0,0" VerticalAlignment="Top" Width="148" FontSize="24"/>
+                    <CheckBox x:Name="checkBox_Copy" Content="附加签名文件" HorizontalAlignment="Left" Height="28" Margin="329,69,0,0" VerticalAlignment="Top" Width="106"/>
+                    <Button x:Name="button4" Content="选择文件" HorizontalAlignment="Left" Height="25" Margin="440,69,0,0" VerticalAlignment="Top" Width="84" FontSize="10.667"/>
+                    <CheckBox x:Name="checkBox_Copy1" Content="导出档案时加密档案" HorizontalAlignment="Left" Height="28" Margin="329,95,0,0" VerticalAlignment="Top" Width="302"/>
+                    <Label x:Name="label_Copy2" Content="关于Mahiro Designer" HorizontalAlignment="Left" Height="38" Margin="329,125,0,0" VerticalAlignment="Top" Width="256" FontSize="24"/>
+                    <Label x:Name="label2" Content="Mahiro Designer是Mahiro Viewer的设计器应用&#xA;&#xA;由 TheSlyFox 设计开发&#xA;&#xA;软件版本 23.1_08062208 Alpha版&#xA;&#xA;界面设计使用MahApps.Metro和Material Design&#xA;" HorizontalAlignment="Left" Height="120" Margin="329,163,0,0" VerticalAlignment="Top" Width="332"/>
+                    <Label x:Name="label_Copy3" Content="测试版本信息" HorizontalAlignment="Left" Height="38" Margin="8,226,0,0" VerticalAlignment="Top" Width="156" FontSize="24"/>
+                    <Label x:Name="label2_Copy" Content="alpha" HorizontalAlignment="Left" Height="53" Margin="12,269,0,0" VerticalAlignment="Top" Width="279"/>
+                    <Button x:Name="button4_Copy" Content="设置密码" HorizontalAlignment="Left" Height="25" Margin="477,98,0,0" VerticalAlignment="Top" Width="84" FontSize="10.667"/>
+                    <Button x:Name="button4_Copy1" Content="查看密码" HorizontalAlignment="Left" Height="25" Margin="573,98,0,0" VerticalAlignment="Top" Width="84" FontSize="10.667"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+        <Image x:Name="imgl2" HorizontalAlignment="Left" Height="135" Margin="19,257,0,0" VerticalAlignment="Top" Width="86"/>
+    </Grid>
+</Window>
